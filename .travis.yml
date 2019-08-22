@@ -44,3 +44,5 @@ after_success: if [ -n "$JACOCO" ]; then bash <(curl -s https://codecov.io/bash)
 #
 # cd ..
 # tar cf - android-sdk-linux | bzip2 -9 > android-sdk-linux.tar.bz2
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
