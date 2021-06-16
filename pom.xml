@@ -86,7 +86,7 @@
     <proguard.plugin.version>2.1.1</proguard.plugin.version>
     <slf4j.version>1.8.0-beta4</slf4j.version>
     <!-- This can't reference project.version as some subprojects version differently -->
-    <zxing.version>3.4.1-SNAPSHOT</zxing.version>
+    <zxing.version>3.4.1</zxing.version>
     <android.platform>22</android.platform>
     <maven.scm.version>1.9.5</maven.scm.version>
   </properties>
@@ -138,9 +138,9 @@
               <id>enforce</id>
               <configuration>
                 <rules>
-                  <requireModuleConvergence />
-                  <requireUpperBoundDeps />
-                  <dependencyConvergence />
+                  <requireModuleConvergence/>
+                  <requireUpperBoundDeps/>
+                  <dependencyConvergence/>
                   <requireMavenVersion>
                     <version>3.2.5</version>
                   </requireMavenVersion>
@@ -319,7 +319,7 @@
             </execution>
           </executions>
           <configuration>
-            <keyname>Sean Owen (ZXing) &lt;srowen@gmail.com&gt;</keyname>
+            <keyname>Sean Owen (ZXing) &lt;srowen@gmail.com></keyname>
           </configuration>
         </plugin>
         <plugin>
@@ -791,7 +791,7 @@
       <id>travis</id>
       <properties>
         <!-- dummy to make @{argLine} evaluate when not set by jacoco -->
-        <argLine />
+        <argLine/>
       </properties>
       <build>
         <plugins>
